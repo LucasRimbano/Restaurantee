@@ -1,0 +1,220 @@
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --primary: #ef4444;
+  --bg: #f9fafb;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --radius: 16px;
+}
+
+/* BODY */
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+.location-btn {
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* SEARCH */
+.search {
+  padding: 0 1rem;
+}
+
+.search input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: var(--radius);
+  border: 1px solid #e5e7eb;
+}
+/* CATEGORÍAS CON ÍCONOS (tipo app) */
+.catbar {
+  display: flex;
+  gap: 12px;
+  padding: 10px 16px 6px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+.catbar::-webkit-scrollbar { height: 0; }
+
+.cat-item {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--text);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+  scroll-snap-align: start;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.cat-item:active { transform: scale(0.98); }
+
+.cat-ico {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.cat-ico svg {
+  width: 20px;
+  height: 20px;
+}
+
+.cat-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Estado activo (seleccionado) */
+.cat-item.is-active {
+  border-color: rgba(239,68,68,0.35);
+  box-shadow: 0 14px 30px rgba(239,68,68,0.18);
+}
+
+.cat-item.is-active .cat-ico {
+  background: rgba(239,68,68,0.12);
+  color: #ef4444;
+}
+
+/* CATEGORIES */
+.categories {
+  display: flex;
+  gap: 0.6rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.categories button {
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  border: none;
+  background: #f3f4f6;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+/* PROMO */
+.promo {
+  padding: 1rem;
+}
+
+.promo-card {
+  background: linear-gradient(135deg, #ef4444, #f97316);
+  color: white;
+  padding: 1.2rem;
+  border-radius: var(--radius);
+}
+
+.promo-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 0.7rem;
+  background: white;
+  color: #ef4444;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* DISHES */
+.dishes {
+  padding: 1rem;
+}
+
+.dishes h3 {
+  margin-bottom: 0.8rem;
+}
+
+.dish-card {
+  display: flex;
+  gap: 0.8rem;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 0.6rem;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.dish-card img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.dish-card h4 {
+  font-size: 0.95rem;
+}
+
+.dish-card p {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* WHATSAPP */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #22c55e;
+  color: white;
+  padding: 0.8rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+html {
+  scroll-behavior: smooth;
+}
