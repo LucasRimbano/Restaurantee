@@ -1,6 +1,4 @@
----
-
-## 🧐 ¿Qué vas a encontrar en la web?
+ ## 🧐 ¿Qué vas a encontrar en la web?
 
 ### 📱 Vista tipo app (mobile-first)
 
