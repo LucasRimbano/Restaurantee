@@ -131,7 +131,7 @@ Este proyecto funciona como:
 ## 📁 Estructura del proyecto
 
 ```text
-📦 foodapp/
+📦tunegocioweb/
 ├── index.html
 ├── menu-completo.html
 ├── impacto.html
@@ -172,10 +172,4 @@ Proyecto orientado a soluciones web para comercios y restaurantes.
 
 ---
 
-Si querés, en el próximo paso puedo:
 
-* adaptarlo a **README bilingüe (ES/EN)**
-* hacerlo más técnico (para recruiters)
-* o agregar una sección **“Cómo contratar este servicio”** dentro del README
-
-Decime cómo lo querés y lo ajustamos.
