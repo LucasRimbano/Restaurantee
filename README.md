@@ -1,15 +1,3 @@
-Excelente, con lo que ya tenés este proyecto **merece un README fuerte**, claro y vendedor, en la misma línea profesional de los que me pasaste.
-
-Te dejo **un README.md listo para copiar y pegar**, adaptado al **proyecto de restaurante / carta digital / pedidos por WhatsApp**, manteniendo **tu estilo**, estructura clara y enfoque comercial (muy importante si algún día lo miran clientes o recruiters).
-
----
-
-# 🍔 FoodApp — Carta Digital para Restaurantes
-
-FoodApp es una **web de restaurante tipo app de pedidos**, pensada para **aumentar ventas** permitiendo que los clientes vean el menú desde el celular y pidan directamente por **WhatsApp**, sin apps externas ni comisiones.
-
-El proyecto está diseñado para mostrarse como **demo comercial** a dueños de locales gastronómicos que aún no tienen presencia web o la tienen desaprovechada.
-
 ---
 
 ## 🧐 ¿Qué vas a encontrar en la web?
