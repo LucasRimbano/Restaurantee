@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>FoodApp | Resultados y Ventas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles-impacto.css">
+</head>
+
+<body>
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <a class="brand" href="index.html">Food<span>App</span></a>
+
+    <nav class="nav">
+      <a class="nav-link" href="index.html">Inicio</a>
+      <a class="nav-link" href="menu.html">Menú</a>
+      <a class="nav-link is-active" href="impacto.html">Resultados</a>
+      <a class="nav-link" href="#planes">Planes</a>
+    </nav>
+
+    <a class="cta" href="#planes">Quiero vender más</a>
+  </header>
+
+  <main class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-card">
+        <p class="pill">📈 Página web + WhatsApp</p>
+        <h1>Convertí visitas en pedidos<br><span>sin depender solo de Instagram</span></h1>
+
+        <p class="hero-text">
+          Este panel muestra cómo una web bien hecha puede aumentar consultas y ventas:
+          botón WhatsApp, carta clara, promos, horarios, ubicación y reseñas.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#kpis">Ver métricas</a>
+          <a class="btn btn-ghost" href="#como">Cómo funciona</a>
+        </div>
+
+        <div class="note">
+          Demo de resultados: valores ilustrativos para mostrar el potencial.
+          Se reemplaza por datos reales (Analytics + clicks a WhatsApp) si el negocio lo desea.
+        </div>
+      </div>
+
+      <div class="hero-media" aria-hidden="true">
+        <div class="screen">
+          <div class="screen-top">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="screen-url">turestaurante.com</span>
+          </div>
+
+          <div class="screen-body">
+            <div class="mini-kpis">
+              <div class="mini">
+                <span class="mini-title">Clicks a WhatsApp</span>
+                <strong class="mini-val">+38%</strong>
+              </div>
+              <div class="mini">
+                <span class="mini-title">Pedidos online</span>
+                <strong class="mini-val">+24%</strong>
+              </div>
+              <div class="mini">
+                <span class="mini-title">Clientes nuevos</span>
+                <strong class="mini-val">+19%</strong>
+              </div>
+            </div>
+
+            <!-- mini chart -->
+            <svg class="spark" viewBox="0 0 320 90" role="img" aria-label="Tendencia de pedidos">
+              <path class="gridline" d="M0 75H320"></path>
+              <path class="gridline" d="M0 45H320"></path>
+              <path class="gridline" d="M0 15H320"></path>
+
+              <path class="line" d="M0 70 C40 55, 80 68, 120 42 C160 20, 200 52, 240 28 C270 14, 295 22, 320 10"></path>
+              <path class="fill" d="M0 70 C40 55, 80 68, 120 42 C160 20, 200 52, 240 28 C270 14, 295 22, 320 10 L320 90 L0 90 Z"></path>
+            </svg>
+
+            <div class="screen-footer">
+              <span>Reporte semanal</span>
+              <span class="badge">Actualizado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KPIs -->
+    <section id="kpis" class="section">
+      <div class="section-head">
+        <p class="kicker">Métricas clave</p>
+        <h2>Lo que le importa al dueño</h2>
+        <p class="sub">Menos “me gusta”, más acciones reales: clicks, consultas y pedidos.</p>
+      </div>
+
+      <div class="kpi-grid">
+        <article class="kpi">
+          <span class="kpi-label">Clicks a WhatsApp</span>
+          <div class="kpi-row">
+            <strong class="kpi-val">1.240</strong>
+            <span class="kpi-delta up">+38%</span>
+          </div>
+          <p class="kpi-note">Personas que tocaron “Pedir” desde la web.</p>
+        </article>
+
+        <article class="kpi">
+          <span class="kpi-label">Pedidos estimados</span>
+          <div class="kpi-row">
+            <strong class="kpi-val">410</strong>
+            <span class="kpi-delta up">+24%</span>
+          </div>
+          <p class="kpi-note">Conversiones atribuidas al flujo web → WhatsApp.</p>
+        </article>
+
+        <article class="kpi">
+          <span class="kpi-label">Visitas del barrio</span>
+          <div class="kpi-row">
+            <strong class="kpi-val">8.9K</strong>
+            <span class="kpi-delta up">+31%</span>
+          </div>
+          <p class="kpi-note">Gente cerca que te encuentra en Google.</p>
+        </article>
+
+        <article class="kpi">
+          <span class="kpi-label">Clientes nuevos</span>
+          <div class="kpi-row">
+            <strong class="kpi-val">+19%</strong>
+            <span class="kpi-delta flat">estable</span>
+          </div>
+          <p class="kpi-note">Aumento cuando hay menú claro + reseñas + ubicación.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CHARTS -->
+    <section class="section section-alt">
+      <div class="section-head">
+        <p class="kicker">Rendimiento</p>
+        <h2>Evolución de pedidos</h2>
+        <p class="sub">Ejemplo de tendencia semanal con una web optimizada para celular.</p>
+      </div>
+
+      <div class="charts">
+        <article class="chart-card">
+          <div class="chart-head">
+            <h3>Pedidos por semana (demo)</h3>
+            <span class="chip">Últimas 8 semanas</span>
+          </div>
+
+          <svg class="bar" viewBox="0 0 480 220" role="img" aria-label="Barras de pedidos por semana">
+            <!-- grid -->
+            <path class="g" d="M50 30H470"></path>
+            <path class="g" d="M50 70H470"></path>
+            <path class="g" d="M50 110H470"></path>
+            <path class="g" d="M50 150H470"></path>
+            <path class="axis" d="M50 190H470"></path>
+            <path class="axis" d="M50 30V190"></path>
+
+            <!-- bars (x=80..450) -->
+            <rect class="b" x="80"  y="140" width="34" height="50" rx="10"></rect>
+            <rect class="b" x="130" y="130" width="34" height="60" rx="10"></rect>
+            <rect class="b" x="180" y="120" width="34" height="70" rx="10"></rect>
+            <rect class="b" x="230" y="105" width="34" height="85" rx="10"></rect>
+            <rect class="b" x="280" y="95"  width="34" height="95" rx="10"></rect>
+            <rect class="b" x="330" y="82"  width="34" height="108" rx="10"></rect>
+            <rect class="b" x="380" y="70"  width="34" height="120" rx="10"></rect>
+            <rect class="b" x="430" y="58"  width="34" height="132" rx="10"></rect>
+
+            <!-- labels -->
+            <text class="t" x="80"  y="208">S1</text>
+            <text class="t" x="130" y="208">S2</text>
+            <text class="t" x="180" y="208">S3</text>
+            <text class="t" x="230" y="208">S4</text>
+            <text class="t" x="280" y="208">S5</text>
+            <text class="t" x="330" y="208">S6</text>
+            <text class="t" x="380" y="208">S7</text>
+            <text class="t" x="430" y="208">S8</text>
+          </svg>
+
+          <p class="chart-note">
+            Qué suele impulsar esta curva: menú claro, botón WhatsApp siempre visible, horario/ubicación,
+            y páginas rápidas (mobile-first).
+          </p>
+        </article>
+
+        <article class="chart-card">
+          <div class="chart-head">
+            <h3>De visita a pedido</h3>
+            <span class="chip">Funnel</span>
+          </div>
+
+          <div class="funnel">
+            <div class="step">
+              <span class="name">Visitas a la web</span>
+              <strong class="val">8.900</strong>
+            </div>
+            <div class="step">
+              <span class="name">Ven el menú</span>
+              <strong class="val">6.200</strong>
+            </div>
+            <div class="step">
+              <span class="name">Click a WhatsApp</span>
+              <strong class="val">1.240</strong>
+            </div>
+            <div class="step highlight">
+              <span class="name">Pedidos estimados</span>
+              <strong class="val">410</strong>
+            </div>
+          </div>
+
+          <p class="chart-note">
+            El objetivo es simple: bajar fricción. Si el cliente entiende rápido qué vendés,
+            cuánto cuesta y cómo pedir, la venta sube.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section id="como" class="section">
+      <div class="section-head">
+        <p class="kicker">Implementación</p>
+        <h2>Cómo esto aumenta ventas</h2>
+        <p class="sub">En 4 puntos claros para que el dueño lo entienda en 30 segundos.</p>
+      </div>
+
+      <div class="how">
+        <article class="how-card">
+          <div class="ico">📍</div>
+          <h3>Te encuentran en Google</h3>
+          <p>Con SEO básico + ubicación + horario, aparecés cuando buscan “comida cerca”.</p>
+        </article>
+
+        <article class="how-card">
+          <div class="ico">📱</div>
+          <h3>Menú mobile-first</h3>
+          <p>El 80%+ busca desde el celular. Si carga rápido y se entiende, compran.</p>
+        </article>
+
+        <article class="how-card">
+          <div class="ico">🟢</div>
+          <h3>WhatsApp directo</h3>
+          <p>Botón pedir visible + mensajes prearmados = más conversiones.</p>
+        </article>
+
+        <article class="how-card">
+          <div class="ico">⭐</div>
+          <h3>Confianza</h3>
+          <p>Fotos reales, reseñas y sucursal. Reduce dudas y aumenta decisión.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PLANES -->
+    <section id="planes" class="section section-alt">
+      <div class="section-head">
+        <p class="kicker">Oferta</p>
+        <h2>Listo para implementarlo en tu negocio</h2>
+        <p class="sub">Mostralo como “propuesta” al dueño: claro, directo y con foco en ventas.</p>
+      </div>
+
+      <div class="plans">
+        <article class="plan">
+          <h3>Base</h3>
+          <p class="plan-sub">Para empezar a recibir pedidos</p>
+          <ul>
+            <li>Landing + Menú visual</li>
+            <li>Botón WhatsApp + mensajes</li>
+            <li>Horario + ubicación</li>
+            <li>Optimizado para celular</li>
+          </ul>
+          <a class="btn btn-primary" href="https://wa.me/5491112345678?text=Hola!%20Quiero%20el%20plan%20Base" target="_blank" rel="noopener">Solicitar</a>
+        </article>
+
+        <article class="plan pro">
+          <div class="tag">Más vendido</div>
+          <h3>Pro</h3>
+          <p class="plan-sub">Para aumentar pedidos de verdad</p>
+          <ul>
+            <li>Todo lo del Base</li>
+            <li>Sección promos + CTA</li>
+            <li>Reseñas + sucursales</li>
+            <li>Panel demo de resultados</li>
+          </ul>
+          <a class="btn btn-primary" href="https://wa.me/5491112345678?text=Hola!%20Quiero%20el%20plan%20Pro" target="_blank" rel="noopener">Solicitar</a>
+        </article>
+
+        <article class="plan">
+          <h3>Premium</h3>
+          <p class="plan-sub">Para negocio en crecimiento</p>
+          <ul>
+            <li>Todo lo del Pro</li>
+            <li>Catálogo editable</li>
+            <li>Medición real (Analytics + eventos)</li>
+            <li>Mejoras mensuales</li>
+          </ul>
+          <a class="btn btn-primary" href="https://wa.me/5491112345678?text=Hola!%20Quiero%20el%20plan%20Premium" target="_blank" rel="noopener">Solicitar</a>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> FoodApp. Panel de demo para mostrar beneficios comerciales.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

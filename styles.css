@@ -218,3 +218,89 @@ body {
 html {
   scroll-behavior: smooth;
 }
+/* =========================
+   CARTA PRINCIPAL (APP GRID)
+   SIN PRECIOS
+========================= */
+
+.section-title{
+  display:flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 1rem;
+  margin: 0.8rem 0 0.9rem;
+}
+
+.section-title h3{
+  font-size: 1.05rem;
+  letter-spacing: -0.2px;
+}
+
+.see-all{
+  text-decoration:none;
+  font-weight: 700;
+  font-size: .86rem;
+  color: var(--primary);
+}
+
+/* Grid */
+.menu-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 0 1rem 1rem;
+}
+
+/* Tile (link completo) */
+.menu-tile{
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+  transition: transform .15s ease, box-shadow .15s ease;
+  display:flex;
+  flex-direction: column;
+}
+
+.menu-tile:active{
+  transform: scale(0.99);
+}
+
+/* Imagen controlada */
+.menu-tile img{
+  width: 100%;
+  height: 150px;       /* clave: no se rompe */
+  object-fit: cover;
+  display:block;
+}
+
+/* Texto */
+.menu-meta{
+  padding: 12px;
+}
+
+.menu-meta h4{
+  font-size: .98rem;
+  letter-spacing: -0.2px;
+  margin-bottom: 4px;
+}
+
+.menu-meta p{
+  font-size: .80rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+/* Desktop */
+@media (min-width: 900px){
+  .menu-grid{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .menu-tile img{
+    height: 160px;
+  }
+}

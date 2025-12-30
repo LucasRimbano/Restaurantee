@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>FoodApp | Menú</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles-menu.css" />
+</head>
+
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <a class="brand" href="index.html">Food<span>App</span></a>
+
+    <nav class="nav">
+      <a class="nav-link" href="index.html">Inicio</a>
+      <a class="nav-link is-active" href="menu.html">Menú</a>
+      <a class="nav-link" href="#sucursales">Sucursales</a>
+      <a class="nav-link" href="#reviews">Reseñas</a>
+    </nav>
+
+    <a class="cta" href="#menu">Pedir ahora</a>
+  </header>
+
+  <!-- HERO -->
+  <main class="page">
+    <section class="hero" aria-label="Promoción principal">
+      <div class="hero-card">
+        <p class="pill">🔥 15% OFF</p>
+        <h1>Comida increíble, <br><span>ingredientes reales</span></h1>
+        <p class="hero-text">
+          Pedí online y recibí tu pedido rápido. Platos abundantes, sabores intensos y
+          promos todas las semanas.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Ver menú</a>
+          <a class="btn btn-ghost" href="#sucursales">Encontrar sucursal</a>
+        </div>
+
+        <div class="hero-badges">
+          <div class="badge">
+            <strong>Entrega</strong>
+            <span>20–40 min</span>
+          </div>
+          <div class="badge">
+            <strong>Pago</strong>
+            <span>Tarjeta / Efectivo</span>
+          </div>
+          <div class="badge">
+            <strong>Calidad</strong>
+            <span>Ingredientes frescos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media" aria-hidden="true">
+        <!-- Cambiá la imagen por la del restaurante -->
+        <img src="images/hero-food.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- MENÚ -->
+    <section id="menu" class="section">
+      <div class="section-head">
+        <p class="kicker">Our menu</p>
+        <h2>Elegí y disfrutá</h2>
+        <p class="sub">
+          Los platos más pedidos y los favoritos de la casa. Tocá “Pedir” para enviar al WhatsApp del local.
+        </p>
+      </div>
+
+      <!-- filtros (solo visual, luego lo hacemos JS) -->
+      <div class="filters" aria-label="Filtros de menú">
+        <button class="chip is-active" type="button">Todos</button>
+        <button class="chip" type="button">Burgers</button>
+        <button class="chip" type="button">Milanesas</button>
+        <button class="chip" type="button">Pizzas</button>
+        <button class="chip" type="button">Postres</button>
+      </div>
+
+    </section>
+    <div class="grid">
+
+  <!-- HAMBURGUESA -->
+  <article class="card">
+    <img class="card-img" src="images/hamburguesa.jpg" alt="Hamburguesa completa">
+    <div class="card-body">
+      <h3>Hamburguesa completa</h3>
+      <p class="desc">Carne jugosa, queso, lechuga, tomate y salsa especial.</p>
+
+      <div class="card-foot">
+        <span class="price">$ 5.500</span>
+        <a class="order" href="https://wa.me/5491112345678?text=Hola!%20Quiero%20pedir%20Hamburguesa%20completa" target="_blank">
+          Pedir
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <!-- PIZZA -->
+  <article class="card">
+    <img class="card-img" src="images/pizza.jpg" alt="Pizza artesanal">
+    <div class="card-body">
+      <h3>Pizza artesanal</h3>
+      <p class="desc">Masa crocante, muzzarella, salsa casera y orégano.</p>
+
+      <div class="card-foot">
+        <span class="price">$ 6.800</span>
+        <a class="order" href="https://wa.me/5491112345678?text=Hola!%20Quiero%20pedir%20Pizza%20artesanal" target="_blank">
+          Pedir
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <!-- FIDEOS -->
+  <article class="card">
+    <img class="card-img" src="images/fideos.jpg" alt="Fideos con salsa">
+    <div class="card-body">
+      <h3>Fideos caseros</h3>
+      <p class="desc">Pasta caliente con salsa a elección y queso rallado.</p>
+
+      <div class="card-foot">
+        <span class="price">$ 4.900</span>
+        <a class="order" href="https://wa.me/5491112345678?text=Hola!%20Quiero%20pedir%20Fideos%20caseros" target="_blank">
+          Pedir
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <!-- ENSALADA -->
+  <article class="card">
+    <img class="card-img" src="images/ensalada.jpg" alt="Ensalada fresca">
+    <div class="card-body">
+      <h3>Ensalada fresca</h3>
+      <p class="desc">Vegetales frescos, aderezo suave y opción saludable.</p>
+
+      <div class="card-foot">
+        <span class="price">$ 4.200</span>
+        <a class="order" href="https://wa.me/5491112345678?text=Hola!%20Quiero%20pedir%20Ensalada%20fresca" target="_blank">
+          Pedir
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <!-- BEBIDA -->
+  <article class="card">
+    <img class="card-img" src="images/coca.jpg" alt="Coca Cola">
+    <div class="card-body">
+      <h3>Gaseosa fría</h3>
+      <p class="desc">Coca Cola bien fría para acompañar tu comida.</p>
+
+      <div class="card-foot">
+        <span class="price">$ 1.800</span>
+        <a class="order" href="https://wa.me/5491112345678?text=Hola!%20Quiero%20pedir%20Coca%20Cola" target="_blank">
+          Pedir
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <!-- ALCOHOL -->
+  <article class="card">
+    <img class="card-img" src="images/alcohol.jpg" alt="Bebida alcohólica">
+    <div class="card-body">
+      <h3>Bebida alcohólica</h3>
+      <p class="desc">Variedad de bebidas para acompañar la noche.</p>
+
+      <div class="card-foot">
+        <span class="price">$ 3.200</span>
+        <a class="order" href="https://wa.me/5491112345678?text=Hola!%20Quiero%20pedir%20Bebida%20alcohólica" target="_blank">
+          Pedir
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <!-- HELADO -->
+  <article class="card">
+    <img class="card-img" src="images/helado.jpg" alt="Helado">
+    <div class="card-body">
+      <h3>Helado</h3>
+      <p class="desc">Postre frío ideal para cerrar la comida.</p>
+
+      <div class="card-foot">
+        <span class="price">$ 2.500</span>
+        <a class="order" href="https://wa.me/5491112345678?text=Hola!%20Quiero%20pedir%20Helado" target="_blank">
+          Pedir
+        </a>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+    <!-- SUCURSALES -->
+    <section id="sucursales" class="section section-alt">
+      <div class="section-head">
+        <p class="kicker">Our outlets</p>
+        <h2>Encontrá una sucursal cerca</h2>
+        <p class="sub">Dirección, contacto y fotos del local para generar confianza.</p>
+      </div>
+
+      <div class="outlets">
+        <article class="outlet">
+          <img src="images/local-1.jpg" alt="Sucursal Centro">
+          <div class="outlet-body">
+            <h3>Sucursal Centro</h3>
+            <p>Av. Principal 123, Buenos Aires</p>
+            <div class="outlet-actions">
+              <a href="#" class="mini">📍 Maps</a>
+              <a href="tel:+541112345678" class="mini">📞 Llamar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="outlet">
+          <img src="images/local-2.jpg" alt="Sucursal Norte">
+          <div class="outlet-body">
+            <h3>Sucursal Norte</h3>
+            <p>Calle 456, Buenos Aires</p>
+            <div class="outlet-actions">
+              <a href="#" class="mini">📍 Maps</a>
+              <a href="tel:+541112345678" class="mini">📞 Llamar</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section id="reviews" class="section">
+      <div class="section-head">
+        <p class="kicker">Testimonios</p>
+        <h2>Lo que dicen los clientes</h2>
+        <p class="sub">Reseñas reales aumentan conversión y pedidos.</p>
+      </div>
+
+      <div class="reviews">
+        <article class="review">
+          <div class="stars">★★★★★</div>
+          <p>“La burger llegó caliente, tremenda calidad. Se nota que usan ingredientes buenos.”</p>
+          <span class="who">— Sofía</span>
+        </article>
+
+        <article class="review">
+          <div class="stars">★★★★★</div>
+          <p>“La milanesa napo es gigante. Recomendadísimo para pedir en familia.”</p>
+          <span class="who">— Matías</span>
+        </article>
+
+        <article class="review">
+          <div class="stars">★★★★★</div>
+          <p>“La web es simple y rápida, pedí por WhatsApp en 1 minuto.”</p>
+          <span class="who">— Valen</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-banner">
+      <div class="cta-box">
+        <h2>¿Listo para comer algo increíble?</h2>
+        <p>Hacé tu pedido ahora y aprovechá las promos del día.</p>
+        <a class="btn btn-primary" href="https://wa.me/5491112345678?text=Hola!%20Quiero%20hacer%20un%20pedido" target="_blank" rel="noopener">
+          Pedir por WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <a 
+  href="https://base-negocio-inventario.vercel.app/servicios.html"
+  class="cta-service"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  ¿Querés esta web para tu negocio?
+</a>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> TUNEGOCIOWEB Todos los derechos reservados 2026.</p>
+    </footer>
+  </main>
+ 
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
